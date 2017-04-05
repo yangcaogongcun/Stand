@@ -59,93 +59,23 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
-<body class="login">
-<div class="login-bg">
-    <div class="content">
-        <div class="content-top">
-            <img src="assets/img/logo-su.png">
-            <h4>测试</h4>
+<body>
+    <div class="login-main">
+      <h1>新能源有限公司能耗系统</h1>
+      <div class="login-tab">
+        <div class="login-right">
+          <h4>系统登陆</h4>
+          <form action="/example/html/form_action.asp" method="get">
+           <input type="text" name="username" placeholder="请输入用户名" />
+           <input type="password" name="password" placeholder="请输入密码" />
+           <input type="submit" value="登 录" class="pass-botton" />
+          </form>
         </div>
-        <!-- BEGIN LOGIN FORM -->
-        <form class="login-form" action="rest/user/login" method="post">
-            <h4 class="form-title">用户名密码登录</h4>
-            <div class="alert alert-danger display-hide">
-                <button class="close" data-close="alert"></button>
-                <span> 输入您的用户名和密码 </span>
-            </div>
-            <div class="form-group">
-                <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
-                <label class="control-label visible-ie8 visible-ie9">用户名</label>
-                <div class="input-icon">
-                    <i class="fa fa-user"></i> <input name="customerName" id="customerName"
-                                                      size="25" value="java1234" class="form-control placeholder-no-fix"
-                                                      type="text" autocomplete="off" placeholder="用户名"/>
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="control-label visible-ie8 visible-ie9">密码</label>
-                <div class="input-icon">
-                    <i class="fa fa-lock"></i>
-                    <input name="customerPwd1" id="customerPwd1" size="25" value="123456"
-                           class="form-control placeholder-no-fix" type="password"
-                           autocomplete="off" placeholder="密码"/> <input name="customerPwd"
-                                                                        id="customerPwd" size="25" value=""
-                                                                        class="form-control placeholder-no-fix"
-                                                                        type="password"
-                                                                        autocomplete="off" placeholder="密码"
-                                                                        style="display: none;"/>
-
-                </div>
-            </div>
-            <div class="form-actions">
-                <!-- <label class="checkbox">
-                            <input type="checkbox" name="remember" value="1"/> 记住我 </label>  -->
-                <button id="loginBut" type="submit" class="btn blue pull-right">
-                    登录 <i class="m-icon-swapright m-icon-white"></i>
-                </button>
-
-
-            </div>
-            <!-- <div class="forget-password">
-            <h4>忘记密码 ?</h4>
-            <p>点击 <a href="javascript:;" id="forget-password">这里</a> 重置您的密码.
-            </p>
-                    </div> -->
-            <!-- <div class="create-account">
-                <p>
-                     还没有账号 ?&nbsp; <a href="javascript:;" id="register-btn">创建一个账号</a>
-                </p>
-            </div>  -->
-        </form>
-        <!-- END LOGIN FORM -->
-        <!-- BEGIN FORGOT PASSWORD FORM -->
-        <form class="forget-form" action="index.html" method="post">
-            <h3>忘记密码 ?</h3>
-            <p>请输入您的电子邮箱地址来重置您的密码.</p>
-            <div class="form-group">
-                <div class="input-icon">
-                    <i class="fa fa-envelope"></i> <input
-                        class="form-control placeholder-no-fix" type="text"
-                        autocomplete="off" placeholder="Email" name="email"/>
-                </div>
-            </div>
-            <div class="form-actions">
-                <button type="button" id="back-btn" class="btn">
-                    <i class="m-icon-swapleft"></i> 返回
-                </button>
-                <button type="submit" class="btn blue pull-right">
-                    提交 <i class="m-icon-swapright m-icon-white"></i>
-                </button>
-            </div>
-        </form>
-
+      </div>
+      <div class="login-foot">
+        <p>版权所有 @新能源有限公司 沪ICP00000</p>
+      </div>
     </div>
-</div>
-
-
-<div class="login-bottom">
-
-</div>
 
 
 <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
